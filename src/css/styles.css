@@ -1,0 +1,265 @@
+.manager-box {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 700px;
+  margin: 0 auto;
+
+  border: 2px solid darkgray;
+  border-radius: 20px;
+  font-family: "Arial", sans-serif;
+  color: gray; 
+}
+
+.manager-header {
+  display: flex;  
+  margin-bottom: 10px;
+  padding: 5px 20px;
+
+  justify-content: space-between;
+
+  background: blue;  
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+
+  cursor: move;
+}
+
+.manager-header-title {
+  font-size: 20px;
+  color: white;
+  text-align: right;
+  font-style: italic;
+}
+
+.header-dots {
+  width: 40px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-image: radial-gradient(red, gray);
+}
+
+.dot-2 {
+  background-image: radial-gradient(yellow, gray);
+}
+
+.dot-3 {
+  background-image: radial-gradient(green, gray);
+}
+
+.manager-content {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+
+  box-sizing: border-box;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 20px;
+  
+  border: 2px solid darkgray;
+  border-radius: 20px;
+  background-color: lightblue;
+
+  cursor: pointer;
+}
+
+.tickets-box {
+  box-sizing: border-box;
+  min-height: 50px;  
+}
+
+.tickets-box.empty {
+  border: 1px solid darkgray;
+}
+
+.ticket-box {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;  
+
+  border: 2px solid darkgray;
+  border-bottom: none;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 50px;
+}
+
+.control {
+  box-sizing: border-box;  
+  width: 30px;
+  height: 30px;
+
+  align-self: center;
+
+  border: 2px solid darkgray;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.name-box {
+  width: 60%;
+  padding-left: 10px;
+
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+
+  cursor: s-resize;
+}
+
+.date-box {
+  display: flex;
+  padding-right: 10px;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.control-box {
+  display: flex;
+
+  width: 70px;
+
+  justify-content: space-between;
+}
+
+.status-box.checked {
+  background-image: url("../img/check1.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 6px;
+}
+
+.edit-box,
+.delete-box {
+  background-image: url("../img/icons.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position-y: 3px; 
+}
+
+.edit-box {
+  background-position-x: 5px; 
+}
+
+.delete-box {
+  background-position-x: -19px; 
+}
+
+.description-box {
+  margin-left: 40px;
+  margin-right: 220px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  word-break: break-all;
+}
+
+.modal {
+  position: absolute;
+
+  width: 500px;
+  box-sizing: border-box;
+  padding: 10px;
+
+  color: gray;
+  font-family: "Arial", sans-serif;
+  border: 2px solid darkgray;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.row label,
+.row input,
+.row textarea {
+  margin-bottom: 10px;
+}
+
+.row input {
+  height: 30px;
+  border-radius: 10px;
+
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.btns-row {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.btns-row button{
+  box-sizing: border-box;  
+  width: 100px;
+  height: 30px;
+  justify-content: flex-end;
+
+  color: gray;
+  border: 2px solid gray;
+  border-radius: 10px;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.btns-row button:first-of-type {
+  margin-right: 10px;
+}
+
+.form-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.blocked {
+  pointer-events: none;
+}
